@@ -34,7 +34,7 @@ These steps are for Claude Code to follow when a person asks it to set up lit-sc
 5. When the person types READY, save the key from the clipboard. On Linux, use `xclip -o -selection clipboard` or `wl-paste` in place of `pbpaste`.
 
    ```
-   pbpaste | python3 -c 'import json,sys; k=sys.stdin.read().strip(); assert k and " " not in k and len(k)<200, "clipboard does not hold a key"; print(json.dumps({"openalexKey": k}))' | claude plugin configure lit-scout --values-stdin
+   pbpaste | python3 -c 'import json,sys; k=sys.stdin.read().strip(); assert k and " " not in k and len(k)<200, "clipboard does not hold a key"; print(json.dumps({"openalexKey": k}))' | claude plugin configure lit-scout@lit-scout --values-stdin
    ```
 
    If the check fails, tell the person to copy the key again and type READY again.

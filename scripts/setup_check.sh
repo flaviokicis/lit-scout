@@ -9,7 +9,7 @@ install_hint_poppler() {
 
 # Names of options the plugin reports as unset; empty when the plugin is not installed or the output has no such list.
 unset_options() {
-  claude plugin configure lit-scout --json 2>/dev/null | python3 -c '
+  claude plugin configure lit-scout@lit-scout --json 2>/dev/null | python3 -c '
 import json, sys
 try:
     data = json.load(sys.stdin)
@@ -52,13 +52,13 @@ if is_set openalexKey OPENALEX_API_KEY; then
     row "OpenAlex key" OK "set in plugin options (not tested)"
   fi
 else
-  row "OpenAlex key" OPTIONAL "free key at https://openalex.org/settings/api; then: export OPENALEX_API_KEY=... or claude plugin configure lit-scout"
+  row "OpenAlex key" OPTIONAL "free key at https://openalex.org/settings/api; then: export OPENALEX_API_KEY=... or claude plugin configure lit-scout@lit-scout"
 fi
 
 if is_set s2Key S2_API_KEY; then
   row "Semantic Scholar key" OK "set"
 else
-  row "Semantic Scholar key" OPTIONAL "free key at https://www.semanticscholar.org/product/api; then: export S2_API_KEY=... or claude plugin configure lit-scout"
+  row "Semantic Scholar key" OPTIONAL "free key at https://www.semanticscholar.org/product/api; then: export S2_API_KEY=... or claude plugin configure lit-scout@lit-scout"
 fi
 
 exit 0
