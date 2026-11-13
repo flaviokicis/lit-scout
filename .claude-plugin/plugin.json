@@ -1,0 +1,37 @@
+{
+  "name": "lit-scout",
+  "version": "0.3.0",
+  "description": "Spots research ideas in your chat, finds the closest papers, reads them in full and tells you whether the idea is new.",
+  "types": "./types/index.d.ts",
+  "userConfig": {
+    "openalexKey": {
+      "type": "string",
+      "title": "OpenAlex API key (optional)",
+      "description": "Free key from https://openalex.org/settings/api. Leave empty to use OPENALEX_API_KEY from your shell, or no key.",
+      "default": "",
+      "sensitive": true
+    },
+    "s2Key": {
+      "type": "string",
+      "title": "Semantic Scholar API key (optional)",
+      "description": "Free key from https://www.semanticscholar.org/product/api. Leave empty to use S2_API_KEY from your shell, or no key.",
+      "default": "",
+      "sensitive": true
+    },
+    "examples": {
+      "type": "string",
+      "title": "Extra classifier examples",
+      "description": "Extra LIT/OTHER examples added to the trigger prompt, one per line.",
+      "default": ""
+    },
+    "debug": {
+      "type": "boolean",
+      "title": "Debug lines",
+      "description": "Write each check's decision to the transcript instead of the debug log.",
+      "default": false
+    }
+  },
+  "author": {
+    "name": "AE Studio"
+  }
+}

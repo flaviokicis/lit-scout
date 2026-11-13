@@ -1,0 +1,110 @@
+[
+ {
+  "paper": {
+   "id": "2510.04147",
+   "authors": [
+    {
+     "_id": "68f4ac4d8589920bf4d31e89",
+     "name": "Yifeng Gao",
+     "hidden": false
+    }
+   ],
+   "publishedAt": "2025-10-05T10:52:28.000Z",
+   "title": "Self Speculative Decoding for Diffusion Large Language Models",
+   "summary": "Diffusion-based Large Language Models (dLLMs) have emerged as a competitive\nalternative to autoregressive models, offering unique advantages through\nbidirection",
+   "upvotes": 1,
+   "discussionId": "68f4ac4d8589920bf4d31e8f",
+   "ai_summary": "SSD is a self-speculative decoding method for diffusion-based large language models that achieves significant speedup without altering output quality.",
+   "ai_keywords": [
+    "diffusion-based Large Language Models",
+    "dLLMs"
+   ],
+   "ai_summary_model": "Qwen/Qwen2.5-Coder-32B-Instruct"
+  },
+  "publishedAt": "2025-10-05T06:52:28.000Z",
+  "title": "Self Speculative Decoding for Diffusion Large Language Models",
+  "summary": "Diffusion-based Large Language Models (dLLMs) have emerged as a competitive\nalternative to autoregressive models, offering unique advantages through\nbidirection",
+  "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2510.04147.png",
+  "numComments": 0,
+  "upvoted": false,
+  "isAuthorParticipating": false,
+  "highlightedTitle": [
+   {
+    "type": "text",
+    "text": "Self "
+   },
+   {
+    "type": "highlight",
+    "text": "Speculative"
+   },
+   {
+    "type": "text",
+    "text": " "
+   },
+   {
+    "type": "highlight",
+    "text": "Decoding"
+   },
+   {
+    "type": "text",
+    "text": " for Diffusion Large Language Models"
+   }
+  ],
+  "highlightedSummary": [
+   {
+    "type": "text",
+    "text": "Diffusion-based Large Language Models (dLLMs) have emerged as a competitive\nalternative to autoregressive models, offering unique advantages through\nbidirectional attention and parallel generation paradigms. However, the\ngeneration results of current parallel decoding methods deviate from stepwise\ndecoding, introducing potential performance degradation, which limits their\npractical deployment. To address this problem, we propose Self\nSpeculative Decoding (SSD), a lossless inference acceleration\nmethod that leverages the dLLM itself as both speculative decoding drafter and\nverifier without auxiliary modules. SSD introduces a self-drafting mechanism\nwhere the model generates predictions for multiple positions, then verifies\nthem through hierarchical verification trees in a single forward pass. Unlike\ntraditional speculative decoding that requires separate draft models, SSD\neliminates model redundancy and memory overhead by exploiting the dLLM's\ninherent parallel prediction capability for multiple positions. This\nself-speculative approach allows the model to progressively verify and accept\nmultiple tokens in a single forward pass. Our experiments demonstrate that SSD\nachieves up to 3.46times speedup while keeping the output identical to\nstepwise decoding on open source models such as LLaDA and Dream. Code will be\nmade publicly available on GitHub."
+   }
+  ]
+ },
+ {
+  "paper": {
+   "id": "2602.01469",
+   "authors": [
+    {
+     "_id": "6986d4132d626112378ad63d",
+     "name": "Mude Hui",
+     "hidden": false
+    }
+   ],
+   "publishedAt": "2026-02-01T22:26:17.000Z",
+   "title": "P-EAGLE: Parallel-Drafting EAGLE with Scalable Training",
+   "summary": "Reasoning LLMs produce longer outputs, requiring speculative decoding drafters trained on extended sequences. Parallel drafting - predicting multiple tokens per",
+   "upvotes": 4,
+   "discussionId": "6986d4132d626112378ad645",
+   "ai_summary": "Parallel-EAGLE enables efficient long-sequence token prediction by transforming autoregressive drafting into parallel multi-token generation with scaled training techniques.",
+   "ai_keywords": [
+    "speculative decoding",
+    "parallel drafting"
+   ],
+   "ai_summary_model": "Qwen/Qwen2.5-Coder-32B-Instruct"
+  },
+  "publishedAt": "2026-02-01T17:26:17.000Z",
+  "title": "P-EAGLE: Parallel-Drafting EAGLE with Scalable Training",
+  "summary": "Reasoning LLMs produce longer outputs, requiring speculative decoding drafters trained on extended sequences. Parallel drafting - predicting multiple tokens per",
+  "thumbnail": "https://cdn-thumbnails.huggingface.co/social-thumbnails/papers/2602.01469.png",
+  "numComments": 0,
+  "upvoted": false,
+  "isAuthorParticipating": false,
+  "highlightedTitle": [
+   {
+    "type": "text",
+    "text": "P-EAGLE: Parallel-Drafting EAGLE with Scalable Training"
+   }
+  ],
+  "highlightedSummary": [
+   {
+    "type": "text",
+    "text": "Reasoning LLMs produce longer outputs, requiring "
+   },
+   {
+    "type": "highlight",
+    "text": "speculative"
+   },
+   {
+    "type": "text",
+    "text": " "
+   }
+  ]
+ }
+]

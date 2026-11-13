@@ -1,0 +1,7 @@
+eval/results/
+__pycache__/
+.claude-plugin/types/
+PRIOR_ART.md
+.DS_Store
+node_modules/
+*.log

@@ -1,0 +1,14 @@
+{
+  "name": "lit-scout",
+  "owner": {
+    "name": "AE Studio"
+  },
+  "plugins": [
+    {
+      "name": "lit-scout",
+      "source": "./",
+      "description": "Spots research ideas in your chat, finds the closest papers, reads them in full and tells you whether the idea is new."
+    }
+  ],
+  "description": "Claude Code plugins from AE Studio."
+}
